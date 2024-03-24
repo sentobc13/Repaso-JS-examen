@@ -129,13 +129,13 @@ const grupo = {
 console.log(grupo.integrantes[1]);
 
 let impresora = {
-    tinta: ["rojo","verde","azul"]
+    tinta: ["rojo", "verde", "azul"]
 };
 let nivelesTinta = impresora.tinta
 console.log(nivelesTinta);
 
 let movil = {
-    especificaciones: ["iPhone","128GB","negro"]
+    especificaciones: ["iPhone", "128GB", "negro"]
 };
 console.log(movil["especificaciones"]);
 
@@ -153,6 +153,74 @@ console.log(concierto.fecha);
 
 grupo.integrantes.pop()
 console.log(grupo.integrantes.length);
+
+// Repaso clase JS 2
+
+// BOOLEANOS
+
+
+let boolean1 = true
+let boolean2 = false
+
+let booleanAnd = boolean1 && boolean2;
+
+let booleanOr = boolean1 || boolean2;
+
+let booleanNot = !boolean1;
+
+let booleanMix0 = (boolean1 || boolean2) && (boolean1 || (!boolean1 && !boolean2));
+
+// OPERADORES
+
+let valorDivision = 17 / 3
+console.log(valorDivision.toFixed(2));
+
+let valorResto = 17 % 7
+console.log(valorResto);
+
+// LÓGICA DE PROGRAMACIÓN
+
+let a = 9
+let b = "9"
+
+if (a == b) {
+    console.log("Son iguales");
+} else {
+    console.log("No son iguales");
+}
+
+if (a === b) {
+    console.log("Son estrictamente iguales");
+} else {
+    console.log("No son estrictamente iguales");
+}
+
+let mochila = [1, 2, 3, 4, 5, 6, 7]
+if (mochila.length > 10) {
+    console.log("No puedo cargar con tantas cosas");
+}
+else if (mochila.length <= 10 && mochila, length >= 2) {
+    console.log("Qué bien voy con mi mochila");
+} else {
+    console.log("Creo que no necesito mochila");
+}
+
+
+let contarHasta10 = 0
+for (let i = 0; i < 10; i++) {
+    console.log("Vuelt nº " + i);
+    contarHasta10 += 1
+    console.log(contarHasta10);
+}
+
+
+
+
+
+
+
+
+
 
 
 
