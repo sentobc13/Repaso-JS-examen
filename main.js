@@ -205,13 +205,43 @@ else if (mochila.length <= 10 && mochila, length >= 2) {
     console.log("Creo que no necesito mochila");
 }
 
-
+//no lo entiendo
 let contarHasta10 = 0
 for (let i = 0; i < 10; i++) {
     console.log("Vuelt nº " + i);
+    // contarHasta10 = contarHasta10 + 1
+
     contarHasta10 += 1
     console.log(contarHasta10);
 }
+
+let diaFestivo = true
+
+if(diaFestivo == true){
+    console.log( "Hoy no trabajo");
+} else{
+     console.log("Hoy toca trabajar");
+}
+
+let trabajo = diaFestivo == true ? "Hoy no trabajo" : "Hoy toca trabajar";
+console.log(trabajo);
+
+
+let arrayBucle = []
+for (let i = 4; i <= 18; i++) {
+    console.log("nº " + i);
+    arrayBucle.push(i);
+
+}
+console.log(arrayBucle);
+
+let resultado = 0
+for (const element of arrayBucle) {
+    resultado += element
+    
+}
+console.log(resultado);
+
 
 
 
