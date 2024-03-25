@@ -205,7 +205,7 @@ else if (mochila.length <= 10 && mochila, length >= 2) {
     console.log("Creo que no necesito mochila");
 }
 
-//no lo entiendo
+
 let contarHasta10 = 0
 for (let i = 0; i < 10; i++) {
     console.log("Vuelt nº " + i);
@@ -217,16 +217,16 @@ for (let i = 0; i < 10; i++) {
 
 let diaFestivo = true
 
-if(diaFestivo == true){
-    console.log( "Hoy no trabajo");
-} else{
-     console.log("Hoy toca trabajar");
+if (diaFestivo == true) {
+    console.log("Hoy no trabajo");
+} else {
+    console.log("Hoy toca trabajar");
 }
-
+//ternario
 let trabajo = diaFestivo == true ? "Hoy no trabajo" : "Hoy toca trabajar";
 console.log(trabajo);
 
-
+//no lo entiendo
 let arrayBucle = []
 for (let i = 4; i <= 18; i++) {
     console.log("nº " + i);
@@ -234,16 +234,96 @@ for (let i = 4; i <= 18; i++) {
 
 }
 console.log(arrayBucle);
-
+//no lo entiendo
 let resultado = 0
 for (const element of arrayBucle) {
     resultado += element
-    
+
 }
 console.log(resultado);
 
+let arrayNuevo = ["Con", "Sofia", "aprendiendo", "bucles"]
+for (const elemento of arrayNuevo) {
+    console.log(elemento);
+}
+for (const elemento in arrayNuevo) {
+    console.log(arrayNuevo[elemento]);
+}
 
 
+let i = 1
+
+while (i <= 20) {
+    if (i % 3 === 0) {
+        console.log("patata");
+    } else {
+        console.log(i);
+    }
+    i++;
+
+}
+
+// EXTRAS
+
+let gente = [
+    {
+        nombre: "Jamiro",
+        edad: 45,
+    },
+    {
+        nombre: "Juan",
+        edad: 35,
+    },
+    {
+        nombre: "Paco",
+        edad: 34,
+    },
+    {
+        nombre: "Pepe",
+        edad: 14,
+    },
+    {
+        nombre: "Pilar",
+        edad: 24,
+    },
+    {
+        nombre: "Laura",
+        edad: 24,
+    },
+    {
+        nombre: "Jenny",
+        edad: 10,
+    },
+];
+//no lo entiendo
+let nombre4letras = []
+for (let person of gente) {
+    let nombre = person.nombre
+    //console.log(nombre);
+
+    if (nombre.length === 4) {
+        console.log(nombre);
+        nombre4letras.push(nombre)
+    }
+
+}
+console.log(nombre4letras);
+
+let empiezaporJymenor40 = []
+for (let persona of gente) {
+    if (persona.nombre.charAt(0) === "J" && persona.edad < 40) {
+        console.log(persona);
+
+    }
+}
+
+//
+if (typeof ordenador === "object") {
+    console.log(typeof ordenador);
+    console.log("apruebas");
+  } else {
+    console.log("suspendes");
+  }
 
 
 
